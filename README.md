@@ -26,7 +26,7 @@ Our embeddings are normalized to the unit sphere before hashing, which makes the
 
 ![Proposed vMF Method](assets/proposed_framework.png)
 
-Overview of vMF approach. Our model has three main components: a convolutional encoder that extracts high-level features from multivariate time series, a normalization step that projects these features onto the unit hypersphere, and a vMF-based loss that models each class as a von Mises–Fisher distribution. Together, these components provide a way to embed input time series into a hyperspherical latent space where samples from the same class are pulled toward a shared centroid, while samples from different classes are pushed apart. The vMF property is realized by promoting compact and well-separated clusters on the hypersphere, which both reduces information loss during binarization and improves the discriminative power of the resulting hash codes.
+**Overview of vMF approach:** Our model has three main components: a convolutional encoder that extracts high-level features from multivariate time series, a normalization step that projects these features onto the unit hypersphere, and a vMF-based loss that models each class as a von Mises–Fisher distribution. Together, these components provide a way to embed input time series into a hyperspherical latent space where samples from the same class are pulled toward a shared centroid, while samples from different classes are pushed apart. The vMF property is realized by promoting compact and well-separated clusters on the hypersphere, which both reduces information loss during binarization and improves the discriminative power of the resulting hash codes.
 
 ---
 
