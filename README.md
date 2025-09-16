@@ -87,9 +87,9 @@ Each dataset folder must contain four `.npy` files:
 
 | Dataset              | Classes | Label Range | Train Samples | Test Samples |
 |----------------------|---------|-------------|---------------|--------------|
-| SHL                  | 2       | 0–1         | 10,208  | 2,553 |
-| PAMAP2               | 12      | 0–11        | 11,588        | 2,897        |
-| CharacterTrajectories| 20      | 0–19        | 1,137  | 285 |
+| [SHL](http://www.shl-dataset.org/dataset/)                  | 2       | 0–1         | 10,208  | 2,553 |
+| [PAMAP2](https://archive.ics.uci.edu/dataset/231/pamap2+physical+activity+monitoring)               | 12      | 0–11        | 11,588        | 2,897        |
+| [CharacterTrajectories](https://www.timeseriesclassification.com/description.php?Dataset=CharacterTrajectories)| 20      | 0–19        | 1,137  | 285 |
 
 ### Important!
 
