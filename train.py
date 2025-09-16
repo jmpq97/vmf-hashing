@@ -49,10 +49,10 @@ for i in range(200):
 
     if val_loss.item() < best_loss:
         best_loss = val_loss.item()
-        torch.save(model_resnet.state_dict(), 'best_hashnet_model.pth')
+        torch.save(model_resnet.state_dict(), 'best_model.pth')
         print("New best val loss:", best_loss, "at epoch", i+1)
 
-model_resnet.load_state_dict(torch.load('best_hashnet_model.pth'))
+model_resnet.load_state_dict(torch.load('best_model.pth'))
 model_resnet.to(device)
 model_resnet.eval()
 

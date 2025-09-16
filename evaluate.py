@@ -234,7 +234,7 @@ test_label = torch.from_numpy(y_test).squeeze().long().to(device)
 test_data = torch.from_numpy(X_test).float().to(device)
 
 model_resnet = resnet34(input_size=input_size, num_classes=num_classes, nbits=16)
-model_resnet.load_state_dict(torch.load("best_hashnet_model.pth", map_location=device))
+model_resnet.load_state_dict(torch.load("best_model.pth", map_location=device))
 model_resnet.to(device)
 model_resnet.eval()
 

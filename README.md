@@ -62,6 +62,14 @@ To reproduce our experiments, download the prepared dataset archive from the fol
 
 Once downloaded, unzip the archive and place the folder inside the project root (`vmf-hashing/`).
 
+### Dataset Description
+
+All datasets are provided in a preprocessed format for direct use with our code.
+
+- **Labels are zero-based** (e.g., if there are 20 classes, they are labeled 0–19).
+- **Splits are Training and Testing only** (no validation split is included).
+- **Do not subtract 1 from labels** in your code. If your pipeline assumes 1-based labels, you must adjust it.
+
 ### Expected Format  
 Each dataset folder must contain four `.npy` files:  
 
@@ -72,7 +80,16 @@ Each dataset folder must contain four `.npy` files:
 
 ### Data Splits  
 - The provided datasets are already split 80% training, 20% testing.
-- During training, our code further creates a validation set from the training data
+- During training, our code further creates a validation set from the training data.
+
+
+#### Summary
+
+| Dataset              | Classes | Label Range | Train Samples | Test Samples |
+|----------------------|---------|-------------|---------------|--------------|
+| SHL                  | 2       | 0–1         | 10,208  | 2,553 |
+| PAMAP2               | 12      | 0–11        | 11,588        | 2,897        |
+| CharacterTrajectories| 20      | 0–19        | 1,137  | 285 |
 
 ### Important!
 
